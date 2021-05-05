@@ -1,1 +1,10 @@
-@ "UTF-8"
+@charset "UTF-8"
+
+body {
+    background-color: #1CFFFB;
+}
+h1 {
+    text-align: center;
+    color: #FF5B12;
+    font: normal 20px Arial;
+}
