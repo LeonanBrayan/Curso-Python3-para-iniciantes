@@ -2,11 +2,43 @@
 
 body {
     background-image: linear-gradient(to right, #1CFFFB, #1bdad6);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+}
+.btn-abrir {
+    color: white;
+    font-size: 20px;
+}
+nav a {
+    color: #FF5B12;
+    font-size: 20px;
+    display: block;
+    padding: 12px 10px 12px 32px;
+}
+nav a:hover {
+    color: #0c4846;
+    background-color: #1CFFFB;
+}
+nav {
+    height: 100%;
+    width: 0px;
+    background-color: #0c4846;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    transition: width 0.2s;
+}
+header {
+    background-color:  #0c4846;
+    padding: 10PX;
 }
 h1#principal {
-    background: #FF5B12;
     text-align: center;
-    color: #3b1402;
 }
 h1 {
     color: #FF5B12;
@@ -21,4 +53,5 @@ main {
     width: 600px;
     padding: 10px;
     margin: auto;
+    transition: margin-left 0.2s;
 }
