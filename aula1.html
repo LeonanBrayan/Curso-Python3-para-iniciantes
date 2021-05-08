@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776; Menu</a>
+        <a href="index.html" class="btn-inicio">Pagina inicial</a>
+        <a href="sobre.html" class="btn-sobre">Sobre</a>
+        <a href="cursos.html" class="btn-cursos">Cursos</a>
+      </header>
+      <nav id="menu">
+        <a href="#" onclick="fecharMenu()">&times; Fechar</a>
+        <a href="index.html">Pagina inicial</a>
+        <a href="aula1.html">Aula 1</a>
+        <a href="#">Aula 2</a>
+      </nav>
+          <main id="conteudo2">
+            <h1 id="principal">Aula 1</h1>
+            <h1>Primeiros comandos</h1>
+          </main>
+        <script>
+          function abrirMenu() {
+            document.getElementById('menu').style.width = '250px';
+            document.getElementById('conteudo2').style.marginLeft = '250px';
+          }
+          function fecharMenu() {
+            document.getElementById('menu').style.width = '0px';
+            document.getElementById('conteudo2').style.marginLeft = 'auto';
+          }
+        </script>
+</body>
+</html>
