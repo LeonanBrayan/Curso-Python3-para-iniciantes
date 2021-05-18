@@ -6,29 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre</title>
     <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/contato.css">
 </head>
 <body>
   <header>
-    <h1>Sobre</h1>
+    <h1>Contato</h1>
      <h2><a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776;</a></h2>
   </header>
   <nav id="open">
     <ul>
       <li id="close"><a href="#" onclick="fecharMenu()">&times;</a></li>
       <li><a href="index.html">Pagina inicial</a></li>
-      <li><a href="#">Sobre</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
       <li><a href="cursos.html">Cursos</a></li>
-      <li><a href="contato.html">Contato</a></li>
+      <li><a href="#">Contato</a></li>
     </ul>
   </nav>
-  <main id="conteudo">
-    <h1 id="principal">Smart Cursos</h1>
-    <p>Esse site foi criado inicialmente, com a intenção de ajudar as pessoas que estão iniciando os estudos na linguagem python, e, tem apenas um smartphone a disposição para praticar seu aprendizado. O fato de não ter um computador ou notebook, nao impede que você aprenda essa linguagem de programação. Então acompanhem as aulas e pratiquem bastante.</p>
-    <p>Site em desenvolvimento, pretendemos adicionar mais cursos de linguagens de programação, em breve.</p>
-    <p>Não emitimos certificados.</p>
-    <p>Site criado apenas para o entendimento mais claro da linguagem, e que te ajudará bastante para complementar seus estudos.</p>
-    <p id="assinatura">Leonan Brayan.</p>
-  </main>
+  <div class="linha">
+    <form class="card">
+      <label for="inputnome">Primeiro nome</label>
+      <input type="text" id="inputnome" required maxlength="40" minlength="2">
+
+      <label for="inputsobrenome">Sobrenome</label>
+      <input type="text" id="inputsobrenome" required maxlength="40">
+      
+      <label for="inputemail">e-mail</label>
+      <input type="text" id="inputemail" required maxlength="40">
+      
+      <label for="textAreaMensagem">Mensagm</label>
+      <textarea name="textAreaMensagem" id="textAreaMensagem" required maxlength="200"></textarea>
+      
+      <button>Enviar mensagem</button>
+    </form>
+  </div>
   <footer>
     <dl>
       <dt>Instagram</dt>

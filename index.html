@@ -5,30 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso Python3</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <h1><img src="smart-curos.png" alt="smartcursos"></h1>
+    <h1>SmartCursos</h1>
+     <h2><a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776;</a></h2>
   </header>
-  <nav>
+  <nav id="open">
     <ul>
-      <li><a href="index.html" class="btn-inicio">Pagina inicial</a></li>
-      <li><a href="sobre.html" class="btn-sobre">Sobre</a></li>
-      <li><a href="cursos.html" class="btn-cursos">Cursos</a></li>
+      <li id="close"><a href="#" onclick="fecharMenu()">&times;</a></li>
+      <li><a href="#">Pagina inicial</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="cursos.html">Cursos</a></li>
+      <li><a href="contato.html">Contato</a></li>
     </ul>
   </nav>
-  <section>
-    Seção de informações
-    <article>
-      Artigo 01
-    </article>
-  </section>
-  <aside>
-    Barra lateral
-  </aside>
+  <div class="linha">
+    <section>
+      <article class="card">
+        <h2>Cursos de linguagens de programação em videoaulas</h2>
+        <img src="imagens/linguagens.png.jpg" alt="Cursos linguagens de programação" width="100%">
+        <p>Curos para iniciantes em linguagens de programação.</p>
+      </article>
+    </section>
+    <aside>
+   <article class="card">
+     <h3>Cursos disponiveis</h3>
+     <img src="imagens/pythonlateral.png.jpg" alt="Cursos disponiveis" width="100%">
+     <p>Confira nossos cursos disponiveis até o momento</p>
+   </article>
+    </aside>
+  </div>
   <footer>
-    Rodapé
+    <dl>
+      <dt>Instagram</dt>
+      <dd>@leonanbryan</dd>
+      <br/>
+      <dt>Youtube</dt>
+      <dd>Leonan Brayan</dd>
+    </dl>
+    <p>Smart Cursos</p>
   </footer>
+  <script>
+    function abrirMenu() {
+      document.getElementById('open').style.height = 'auto';
+      document.getElementById('menu').style.width = '100%';
+    }
+    function fecharMenu() {
+      document.getElementById('open').style.height = '0px';
+    }
+  </script>
 </body>
 </html>

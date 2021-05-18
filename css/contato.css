@@ -1,0 +1,50 @@
+@charset "UTF-8";
+form {
+  width: 50%;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(188, 198, 192, 0.738);
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1em;
+  font: 1em sans-serif;
+  border: 1px solid rgba(188, 198, 192, 0.738);
+}
+input:focus, textarea:focus {
+  border-color: rgba(48, 28, 194, 0.948) !important;
+}
+input:invalid, textarea:invalid{
+  border-color: red;
+}
+input:valid, textarea:valid{
+  border-color: green;
+}
+label {
+  font-weight: bold;
+  padding: 4px;
+  display: inline-block;
+}
+button {
+  background-color: white;
+  border: 1px solid rgba(48, 28, 194, 0.948);
+  color: rgba(48, 28, 194, 0.948);
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 2px;
+}
+button:hover {
+  background-color: rgba(48, 28, 194, 0.948);
+  color: white;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px){
+  button {
+    width: 100%;
+  }
+}
