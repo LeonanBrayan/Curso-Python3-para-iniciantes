@@ -23,18 +23,18 @@
     </ul>
   </nav>
   <div class="linha">
-    <form class="card">
-      <label for="inputnome">Primeiro nome</label>
-      <input type="text" id="inputnome" required maxlength="40" minlength="2">
+    <form action="https://api.staticforms.xyz/submit" method="POST" class="card">
+      <input type="hidden" name="accessKey" value="c7b47451-2576-4c44-918b-dc4582f8b36a">
+      <input type="hidden" name="redirectTo" value="https://blog-smartcursos.000webhostapp.com/contato.html">
 
-      <label for="inputsobrenome">Sobrenome</label>
-      <input type="text" id="inputsobrenome" required maxlength="40">
-      
+      <label for="inputnome">Nome</label>
+      <input type="text" id="inputnome" name="name" required maxlength="20" minlength="2"><span></span> 
+
       <label for="inputemail">e-mail</label>
-      <input type="text" id="inputemail" required maxlength="40">
+      <input type="text" id="inputemail" name="email" required maxlength="40"><span></span>
       
       <label for="textAreaMensagem">Mensagm</label>
-      <textarea name="textAreaMensagem" id="textAreaMensagem" required maxlength="200"></textarea>
+      <textarea name="message" id="textAreaMensagem" required maxlength="200"></textarea><span></span>
       
       <button>Enviar mensagem</button>
     </form>
