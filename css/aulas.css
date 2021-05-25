@@ -177,8 +177,12 @@ footer dl, footer p {
   main#conteudo {
     width: 280px;
   }
+  header {
+    background-color: rgb(8, 42, 82);
+  }
   nav#open {
-    height: 0px;
+    background-color: rgb(19, 76, 140);
+    height: 42px;
     z-index: 1;
     overflow: hidden;
     transition: height 0.2s;
@@ -189,18 +193,40 @@ footer dl, footer p {
     width: 100%;
     padding: 12px 10px 12px 32px;
   }
-  header h2 {
-    text-align: right;
+  nav#open ul {
+    list-style: none;
+    background-color: rgb(19, 76, 140);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  .abrir {
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0px;
+  }
+  header a {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  header h1 {
+    text-align: center;
+    font-size: 20px;
     font-weight: bold;
     display: table;
     width: 100%;
   }
-  header h1, header h2 {
+  header h1, header p {
     display: table-cell;
     vertical-align: middle;
     padding: 8px;
   }
-  header#para-menu a {
-    font-size: 14px;
+  header p {
+    margin-left: 8;
+  }
+  footer {
+    background-color: rgb(19, 76, 140);
   }
 }
