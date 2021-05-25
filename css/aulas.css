@@ -169,6 +169,9 @@ footer dl, footer p {
   header h2 {
     display: none;
   }
+  header p {
+    display: none;
+  }
   nav#open li#close {
     display: none;
   }
