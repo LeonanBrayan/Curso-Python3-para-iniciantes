@@ -169,7 +169,10 @@ footer dl, footer p {
   header h2 {
     display: none;
   }
-  nav#open li#close{
+  nav#open li#close {
+    display: none;
+  }
+  nav#open h2 {
     display: none;
   }
 }
