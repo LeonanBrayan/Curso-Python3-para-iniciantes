@@ -14,9 +14,6 @@ input, textarea {
 input:focus, textarea:focus {
   border-color: rgba(48, 28, 194, 0.948) !important;
 }
-input:invalid, textarea:invalid{
-  border-color: red;
-}
 input:valid, textarea:valid{
   border-color: green;
 }
@@ -40,10 +37,6 @@ button:hover {
 }
 span {
   position: relative;
-}
-input:invalid + span::before, textarea:invalid + span::before {
-  content: '✖';
-  color: red;
 }
 input:valid + span::before, textarea:valid + span::before {
   content: '✓';
