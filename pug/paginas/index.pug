@@ -1,18 +1,14 @@
-doctype html
-html(lang="pt-br")
-    head
-        meta(charset='UTF-8')
-        meta(http-equiv='X-UA-Compatible' content='IE=edge')
-        meta(name='viewport' content='width=device-width, initial-scale=1.0')
-        title SmartCursos
-        link(rel='stylesheet' type='text/css' href='../../css/style.css')
-        script(data-ad-client='ca-pub-9913080789602930' async='' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
-    body
-        header 
-            h1 SmartCursos
-            h2
-                a.btn-abrir(href='#' onclick='abrirMenu()') &#x2630;
+extends layout.pug
+block titulo
+    title SmartCursos
+block css
+    link(rel='stylesheet' type='text/css' href='../../css/style.css')
+block header
+    header
+        h1 SmartCursos
+        include ../includes/header
         include ../includes/nav
+block conteudo
         div.linha
             section
                 article.card
@@ -26,5 +22,4 @@ html(lang="pt-br")
                     a(href='cursos.html')
                         img(src='../../imagens/pythonlateral.png.jpg' alt='Cursos disponiveis' width='100%')
                     p Confira nossos cursos disponiveis até o momento
-        include ../includes/footer
-        script(src='../../javascript/menu.js')
+        

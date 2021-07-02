@@ -4,8 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos</title>
+    <title>SmartCursos</title>
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
-    <script data-ad-client="ca-pub-9913080789602930" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>
+  <body>
+    <header>
+      <h1>SmartCursos</h1>
+      <h2><a class="btn-abrir" href="#" onclick="abrirMenu()">&#x2630;</a></h2>
+      <nav id="open">
+        <ul>
+          <li id="close"><a href="#" onclick="fecharMenu()">&times;</a></li>
+          <li><a href="/">Pagina inicial</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="linha">
+      <section>
+        <article class="card">
+          <h2>Cursos</h2><img src="../../imagens/cursopython.png.jpg" alt="Curso basico de python3" width="100%">
+          <p id="assinatura" onclick="abrirAulas()">Acessar aulas</p>
+        </article>
+        <ul id="openaulas">
+          <li id="closeaulas" onclick="fecharAulas()">&times;</li>
+          <li>
+            <div id="acesso">
+              <ul>
+                <li>
+                  <div id="aulas"><a href="aula1.html">Aula_1</a></div>
+                </li>
+                <li>
+                  <div id="aulas"><a href="aula2.html">Aula_2</a></div>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <aside>
+        <article class="card"></article>
+        <h3>Cursos disponiveis</h3><img src="imagens/pythonlateral.png.jpg" alt="Cursos disponiveis" width="100%">
+        <p>Confira nossos cursos disponiveis até o momento</p>
+      </aside>
+    </div>
+    <footer>
+      <dl>
+        <dt>Instagram</dt>
+        <dd>@leonanbryan</dd><br>
+        <dt>Youtube</dt>
+        <dd>Leonan Brayan</dd>
+      </dl>
+      <p>SmartCursos</p>
+    </footer>
+    <script src="../../javascript/menu.js"></script>
+  </body>
 </html>

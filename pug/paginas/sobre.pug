@@ -1,9 +1,21 @@
-doctype html
-html(lang="pt-br")
-    head
-        meta(charset='UTF-8')
-        meta(http-equiv='X-UA-Compatible' content='IE=edge')
-        meta(name='viewport' content='width=device-width, initial-scale=1.0')
-        title Sobre
-        link(rel='stylesheet' type='text/css' href='../../css/style.css')
-        script(data-ad-client='ca-pub-9913080789602930' async='' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
+extends layout.pug
+block titulo
+    title Sobre
+block css
+    link(rel='stylesheet' type='text/css' href='../../css/style.css')
+block header
+    header
+        h1 Sobre
+        include ../includes/header
+        include ../includes/nav
+block conteudo
+    main#conteudo
+        h1#principal Smart Cursos
+        p
+            | Esse site foi criado inicialmente, com a intenção de ajudar as pessoas que estão iniciando os estudos na linguagem python, e, tem apenas um smartphone a disposição para praticar seu aprendizado. O fato de não ter um computador ou notebook, nao impede que você aprenda essa linguagem de programação. Então acompanhem as aulas e pratiquem bastante.
+        p
+            | Site em desenvolvimento, pretendemos adicionar mais cursos de linguagens de progração, em breve.
+        p Não emitimos certificados.
+        p
+            | Site criado apenas para o entendimento mais claro da linguagem, e que te ajudará bastante para complementar seus estudos.
+        p#assinatura Leonan Brayan.

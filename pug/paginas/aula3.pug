@@ -1,9 +1,14 @@
-doctype html
-html(lang="pt-br")
-    head
-        meta(charset='UTF-8')
-        meta(http-equiv='X-UA-Compatible' content='IE=edge')
-        meta(name='viewport' content='width=device-width, initial-scale=1.0')
-        title Aula 3
-        link(rel='stylesheet' type='text/css' href='../../css/style.css')
-        script(data-ad-client='ca-pub-9913080789602930' async='' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
+extends layout.pug
+block titulo
+    title Aula 3
+block css
+    link(rel='stylesheet' type='text/css' href='../../css/aulas.css')
+block header
+    header
+        include ../includes/headeraulas
+        h1 Aula_03
+    include ../includes/navaulas
+block conteudo
+
+block script
+    script(src='../../javascript/menuaulas.js')

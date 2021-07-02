@@ -40,7 +40,7 @@ nav#open a:hover {
 }
 nav#open ul {
     list-style: none;
-    background-color:  rgba(48, 28, 194, 0.948);
+    background-color: rgb(19, 76, 140);
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -50,7 +50,7 @@ nav#open li {
 }
 header {
     text-align: center;
-    background-color:  rgba(48, 28, 194, 0.948);
+    background-color: rgb(8, 42, 82);
     padding: 2px;
 }
 header h2 a {
@@ -138,7 +138,7 @@ iframe {
 footer {
   font-size: 12px;
   padding: 20px;
-  background-color: rgba(48, 28, 194, 0.948);
+  background-color: rgb(19, 76, 140);
   color: white;
   margin-top: 20px;
 }
@@ -182,9 +182,6 @@ footer dl, footer p {
 @media screen and (max-width: 600px) {
   main#conteudo {
     width: 280px;
-  }
-  header {
-    background-color: rgb(8, 42, 82);
   }
   nav#open {
     background-color: rgb(19, 76, 140);
@@ -231,8 +228,5 @@ footer dl, footer p {
   }
   header p {
     margin-left: 8;
-  }
-  footer {
-    background-color: rgb(19, 76, 140);
   }
 }
