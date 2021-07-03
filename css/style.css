@@ -9,7 +9,7 @@ body {
     margin: 0px;
 }
 .linha {
-  padding: 0 20px;
+  padding: 0 4px;
   display: table;
   width: 100%;
 }
@@ -21,11 +21,42 @@ main {
   width: 100%;
   height: 370;
   overflow: hidden;
+  position: relative;
+}
+.centro h1 {
+  color: #075588;
+}
+.centro h2 {
+  text-align: center;
 }
 #banner img {
   width: 100%;
   height: auto;
   display: block;
+  filter: opacity(60%);
+}
+.centro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  background-color: #0aab9bc2;
+  padding: 4px;
+  display: none;
+}
+.lateral {
+  width: 20%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translate(-4%,-50%);
+  text-align: center;
+  background-color: #0aab9bc2;
+  padding: 4px;
+  border-radius: 20px;
+  box-shadow: -5px -5px 2px #eecb2d;
 }
 section {
   float: left;
@@ -34,7 +65,7 @@ section {
 .card {
   background-color: white;
   padding: 8px;
-  margin-top: 20px;
+  margin-top: 4px;
 }
 aside {
   float: left;
@@ -54,7 +85,6 @@ nav#open a:hover {
 }
 nav#open ul {
     list-style: none;
-    background-color:  rgba(48, 28, 194, 0.948);
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -178,6 +208,10 @@ footer dl, footer p {
     width: 100%;
     padding: 0;
   }
+  .lateral {
+    width: 30%;
+    font-size: 12px;
+  }
 }
 @media screen and (min-width: 601px) {
   header h2 {
@@ -216,5 +250,8 @@ footer dl, footer p {
   }
   header#para-menu a {
     font-size: 14px;
+  }
+  .centro {
+    font-size: 12px;
   }
 }
