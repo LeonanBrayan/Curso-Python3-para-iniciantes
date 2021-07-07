@@ -1,8 +1,8 @@
 function abrirMenu() {
-    document.getElementById('open').style.right = '20px';
+    document.getElementById('open').style.width = '50%';
   }
   function fecharMenu() {
-    document.getElementById('open').style.height = '0px';
+    document.getElementById('open').style.width = '0px';
   }
   function abrirAulas() {
     document.getElementById('openaulas').style.height = '240px';

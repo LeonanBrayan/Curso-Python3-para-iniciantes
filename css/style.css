@@ -125,7 +125,7 @@ nav#open a {
     color: rgba(11, 6, 48, 0.87);
 }
 nav#open a:hover {
-    background-color: rgba(223, 244, 248, 0.89);
+    background-color: white;
     color: #0c4846;
 }
 nav#open ul {
@@ -136,6 +136,11 @@ nav#open ul {
 }
 nav#open li {
     float: right;
+}
+nav#open p#close{
+  text-align: right;
+  font-size: 32px;
+  margin-top: 12px;
 }
 p {
     text-align: justify;
@@ -156,6 +161,32 @@ main#conteudo{
 }
 main {
   transition: margin-left 0,2s;
+}
+/*configurando tabela de cursos*/
+.tabcursos {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border: 1px solid rgb(170, 168, 168);
+  padding: 8px;
+}
+.cursos {
+  float: left;
+  width: 190px;
+  height: 200px;
+  background-color: rgba(222, 222, 222, 0.846);
+  padding: 8px;
+  text-align: justify;
+}
+.tabcursos ul {
+  list-style: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.tabcursos li {
+  padding: 20px;
+  float: left;
 }
 section ul#openaulas {
   height: 0px;
@@ -261,7 +292,7 @@ footer dl, footer p {
   header h2 {
     display: none;
   }
-  nav#open li#close{
+  nav#open p#close{
     display: none;
   }
 }
@@ -280,18 +311,31 @@ footer dl, footer p {
   .lateral {
     display: none;
   }
-  header nav#open {
-    position: absolute;
-    right: -280px;
+  nav#open {
+    width: 0px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(238, 248, 250);
     z-index: 1;
-    overflow: hidden;
-    transition: height 0.2s;
+    overflow: auto;
+    transition: width 0.2s;
+  }
+  nav#open ul {
+    padding-top: 40px;
+    width: 100%;
+    display: block;
+    text-align: left;
   }
   nav#open li {
     float: none;
-    text-align: center;
-    width: 100%;
     padding: 12px 10px 12px 32px;
+  }
+  nav#open a {
+    padding: 12px 10px 12px 12px;
+    color: rgba(48, 28, 194, 0.948);
+    font-weight: bolder;
   }
   header h2 {
     text-align: right;
@@ -307,7 +351,12 @@ footer dl, footer p {
   header#para-menu a {
     font-size: 14px;
   }
-  .centro {
-    font-size: 12px;
+  .tabcursos li {
+    float: none;
+  }
+  .cursos {
+    width: 100%;
+    margin-top: 8px;
+    height: auto;
   }
 }
