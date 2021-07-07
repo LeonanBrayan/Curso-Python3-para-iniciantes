@@ -304,9 +304,10 @@ footer dl, footer p {
     height: 190px;
   }
   #codigo {
+    font-size: 110px;
     position: absolute;
-    top: 68px;
-    right: 22%;
+    top: 180px;
+    right: 180px;
   }
   .lateral {
     display: none;
