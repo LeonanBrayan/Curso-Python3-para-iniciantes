@@ -8,6 +8,28 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
 }
+header {
+  text-align: center;
+  background-color: white;
+  padding: 8px;
+}
+header #open {
+  display: table;
+  width: 100%;
+}
+header h1, header #open {
+  display: table-cell;
+}
+header h2 a {
+color: rgba(11, 6, 48, 0.87);
+}
+h1#principal {
+color: rgb(12, 158, 238);
+text-align: center;
+}
+header h1 {
+  color: rgba(11, 6, 48, 0.87);
+}
 .linha {
   padding: 0 4px;
   display: table;
@@ -20,8 +42,12 @@ main {
 #banner {
   width: 100%;
   height: 370;
-  overflow: hidden;
   position: relative;
+}
+.bannerdiv {
+  background-image: linear-gradient(rgba(48, 28, 194, 0.948), rgba(29, 17, 122, 0.87), rgba(36, 6, 48, 0.87));
+  width: 100%;
+  height: 310px;
 }
 .centro h1 {
   color: #075588;
@@ -35,28 +61,47 @@ main {
   display: block;
   filter: opacity(60%);
 }
-.centro {
+.bannerdiv h2 {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  text-align: center;
-  background-color: #0aab9bc2;
+  top: 20px;
+  right: 190px;
+  transform: translate(-8px,-240px);
   padding: 4px;
-  display: none;
+  font-size: 260px;
+}
+#codigo {
+  color: #07F2F6;
+  text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
 }
 .lateral {
-  width: 20%;
-  height: 80%;
+  width: 370px;
+  height: 248px;
   position: absolute;
-  top: 50%;
-  left: 2%;
-  transform: translate(-4%,-50%);
+  top: 80px;
+  left: 80px;
+  transform: translate(-40px,-40px);
   text-align: center;
-  background-color: #0aab9bc2;
+  background-color: white;
   padding: 4px;
-  border-radius: 20px;
-  box-shadow: -5px -5px 2px #eecb2d;
+  border-radius: 10px;
+  box-shadow: -2px 2px 2px rgb(184, 182, 182);
+  z-index: 1;
+}
+.lateral p {
+  text-align: justify;
+  font-size: 20px;
+}
+.botao {
+  width: 110px;
+  height: 40px;
+  background-color: #07F2F6;
+  position: absolute;
+  top: 140px;
+  left: 114px;
+  box-shadow: 1px 1px 1px rgba(36, 6, 48, 0.87), -1px 1px 1px rgba(36, 6, 48, 0.87), 1px -1px 1px rgba(36, 6, 48, 0.87), -1px -1px 1px rgba(36, 6, 48, 0.87);
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
 }
 section {
   float: left;
@@ -77,10 +122,10 @@ a {
 }
 nav#open a {
     padding: 20px;
-    color: white;
+    color: rgba(11, 6, 48, 0.87);
 }
 nav#open a:hover {
-    background-color: white;
+    background-color: rgba(223, 244, 248, 0.89);
     color: #0c4846;
 }
 nav#open ul {
@@ -90,22 +135,7 @@ nav#open ul {
     padding: 0;
 }
 nav#open li {
-    float: left;
-}
-header {
-    text-align: center;
-    background-color:  rgba(48, 28, 194, 0.948);
-    padding: 2px;
-}
-header h2 a {
-  color: white;
-}
-h1#principal {
-  color: rgb(12, 158, 238);
-  text-align: center;
-}
-h1 {
-    color: white;
+    float: right;
 }
 p {
     text-align: justify;
@@ -203,14 +233,28 @@ footer dl, footer p {
   display: table-cell;
   vertical-align: middle
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   section, aside {
     width: 100%;
     padding: 0;
   }
+  .bannerdiv {
+    height: 260px;
+  }
+}
+@media screen and (max-width: 998px) {
   .lateral {
-    width: 30%;
-    font-size: 12px;
+    width: 310px;
+    height: 220px;
+  }
+  .botao {
+    position: absolute;
+    left: 88px;
+  }
+  #codigo {
+    font-size: 190px;
+    position: absolute;
+    top: 100px;
   }
 }
 @media screen and (min-width: 601px) {
@@ -225,8 +269,20 @@ footer dl, footer p {
   main#conteudo {
     width: 280px;
   }
-  nav#open {
-    height: 0px;
+  .bannerdiv {
+    height: 190px;
+  }
+  #codigo {
+    position: absolute;
+    top: 68px;
+    right: 100px;
+  }
+  .lateral {
+    display: none;
+  }
+  header nav#open {
+    position: absolute;
+    right: -280px;
     z-index: 1;
     overflow: hidden;
     transition: height 0.2s;

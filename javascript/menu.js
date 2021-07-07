@@ -1,5 +1,5 @@
 function abrirMenu() {
-    document.getElementById('open').style.height = 'auto';
+    document.getElementById('open').style.right = '20px';
   }
   function fecharMenu() {
     document.getElementById('open').style.height = '0px';
