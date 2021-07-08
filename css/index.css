@@ -10,7 +10,7 @@ body {
 }
 header {
   text-align: center;
-  background-color: rgba(48, 28, 194, 0.948);
+  background-color: white;
   padding: 8px;
 }
 header #open {
@@ -21,14 +21,14 @@ header h1, header #open {
   display: table-cell;
 }
 header h2 a {
-color: white;
+color: rgba(11, 6, 48, 0.87);
 }
 h1#principal {
 color: rgb(12, 158, 238);
 text-align: center;
 }
 header h1 {
-  color: white;
+  color: rgba(11, 6, 48, 0.87);
 }
 .linha {
   padding: 0 4px;
@@ -37,6 +37,71 @@ header h1 {
 }
 main {
   margin: 0 auto;
+
+}
+#banner {
+  width: 100%;
+  height: 370;
+  position: relative;
+}
+.bannerdiv {
+  background-image: linear-gradient(rgba(48, 28, 194, 0.948), rgba(29, 17, 122, 0.87), rgba(36, 6, 48, 0.87));
+  width: 100%;
+  height: 310px;
+}
+.centro h1 {
+  color: #075588;
+}
+.centro h2 {
+  text-align: center;
+}
+#banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: opacity(60%);
+}
+.bannerdiv h2 {
+  position: absolute;
+  top: 20px;
+  right: 190px;
+  transform: translate(-8px,-240px);
+  padding: 4px;
+  font-size: 260px;
+}
+#codigo {
+  color: #07F2F6;
+  text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
+}
+.lateral {
+  width: 370px;
+  height: 248px;
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  transform: translate(-40px,-40px);
+  text-align: center;
+  background-color: white;
+  padding: 4px;
+  border-radius: 10px;
+  box-shadow: -2px 2px 2px rgb(184, 182, 182);
+  z-index: 1;
+}
+.lateral p {
+  text-align: justify;
+  font-size: 20px;
+}
+.botao {
+  width: 110px;
+  height: 40px;
+  background-color: #07F2F6;
+  position: absolute;
+  top: 140px;
+  left: 114px;
+  box-shadow: 1px 1px 1px rgba(36, 6, 48, 0.87), -1px 1px 1px rgba(36, 6, 48, 0.87), 1px -1px 1px rgba(36, 6, 48, 0.87), -1px -1px 1px rgba(36, 6, 48, 0.87);
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
 }
 section {
   float: left;
@@ -57,7 +122,7 @@ a {
 }
 nav#open a {
     padding: 20px;
-    color: white;
+    color: rgba(11, 6, 48, 0.87);
 }
 nav#open a:hover {
     background-color: white;
@@ -96,6 +161,32 @@ main#conteudo{
 }
 main {
   transition: margin-left 0,2s;
+}
+/*configurando tabela de cursos*/
+.tabcursos {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border: 1px solid rgb(170, 168, 168);
+  padding: 8px;
+}
+.cursos {
+  float: left;
+  width: 190px;
+  height: 200px;
+  background-color: rgba(222, 222, 222, 0.846);
+  padding: 8px;
+  text-align: justify;
+}
+.tabcursos ul {
+  list-style: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.tabcursos li {
+  padding: 20px;
+  float: left;
 }
 section ul#openaulas {
   height: 0px;
@@ -175,18 +266,21 @@ footer dl, footer p {
 }
 @media screen and (max-width: 1200px) {
   section, aside {
-      width: 100%;
-        padding: 0;
+    width: 100%;
+    padding: 0;
+  }
+  .bannerdiv {
+    height: 260px;
   }
 }
 @media screen and (max-width: 998px) {
   .lateral {
-      width: 310px;
-      height: 220px;
+    width: 310px;
+    height: 220px;
   }
   .botao {
-      position: absolute;
-      left: 88px;
+    position: absolute;
+    left: 88px;
   }
   #codigo {
     font-size: 190px;
@@ -198,13 +292,25 @@ footer dl, footer p {
   header h2 {
     display: none;
   }
-  nav#open p#close {
+  nav#open p#close{
     display: none;
   }
 }
 @media screen and (max-width: 600px) {
   main#conteudo {
     width: 280px;
+  }
+  .bannerdiv {
+    height: 190px;
+  }
+  #codigo {
+    font-size: 110px;
+    position: absolute;
+    top: 180px;
+    right: 180px;
+  }
+  .lateral {
+    display: none;
   }
   nav#open {
     width: 0px;
@@ -242,5 +348,16 @@ footer dl, footer p {
     display: table-cell;
     vertical-align: middle;
     padding: 8px;
+  }
+  header#para-menu a {
+    font-size: 14px;
+  }
+  .tabcursos li {
+    float: none;
+  }
+  .cursos {
+    width: 100%;
+    margin-top: 8px;
+    height: auto;
   }
 }
