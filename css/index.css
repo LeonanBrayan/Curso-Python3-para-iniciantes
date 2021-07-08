@@ -69,9 +69,16 @@ main {
   padding: 4px;
   font-size: 260px;
 }
-#codigo {
+.codigo {
+  position: absolute;
+  top: 20px;
+  right: 80px;
+  text-align: center;
+  width: 30%;
+  height: auto;
   color: #07F2F6;
   text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
+  font-size: 190px;
 }
 .lateral {
   width: 370px;
@@ -303,12 +310,14 @@ footer dl, footer p {
   .bannerdiv {
     height: 190px;
   }
-  #codigo {
-    font-size: 110px;
-    position: absolute;
-    top: 180px;
-    right: 180px;
-  }
+  .codigo {
+  position: absolute;
+  top: 28px;
+  right: 92px;
+  text-align: center;
+  width: 50%;
+  font-size: 130px;
+}
   .lateral {
     display: none;
   }
