@@ -183,13 +183,12 @@ main {
   width: 280px;
   background-color: rgba(241, 240, 240, 0.846);
   padding: 0px;
-  text-align: justify;
 }
 .cursos img {
   width: 100%
 }
 .cursos h2, .cursos p{
-  padding-left: 10px;
+  padding: 20px;
 }
 .btncursos {
   font-weight: bolder;
