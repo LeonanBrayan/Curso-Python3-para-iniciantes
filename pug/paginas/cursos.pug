@@ -14,21 +14,24 @@ block conteudo
             section
                 article.card
                     h2 Cursos
-                    img(src='../../imagens/cursopython.png.jpg' alt='Curso basico de python3' width='100%')
-                    p#assinatura(onclick='abrirAulas()') Acessar aulas
-                ul#openaulas
-                    li#closeaulas(onclick='fecharAulas()') &times;
-                    li
-                        #acesso
-                            ul
-                                li
-                                    #aulas
-                                        a(href='aula1.html') Aula_1
-                                li
-                                    #aulas
-                                        a(href='aula2.html') Aula_2
-            aside
-                article.card
-                    h3 Cursos disponiveis
-                    img(src='../../imagens/pythonlateral.png.jpg' alt='Cursos disponiveis' width='100%')
-                    p Confira nossos cursos disponiveis até o momento
+                    .tabcursos
+                        ul
+                            li
+                                .cursos
+                                    a(href='python.html')
+                                        img(src='../../imagens/pythonlogo.jpg' alt='python3')
+                                    h2 Python3 Básico
+                                    p
+                                        | Curso didático feito especialmente para pessoas que usam o smartphone para praticar seus estudos
+                                    h2.h2botao
+                                        button.btncursos(type='button')
+                                            a(href='python.html') Começar
+                            li
+                                .cursos
+                                    h2 HTML5 - Curso html5
+                            li
+                                .cursos
+                                    h2 CSS3 - curso css3
+                            li
+                                .cursos
+                                    h2 javascript - curso javascript

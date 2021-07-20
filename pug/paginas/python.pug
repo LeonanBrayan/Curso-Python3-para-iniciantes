@@ -1,0 +1,27 @@
+extends layout.pug
+block titulo
+    title Python3
+block css
+    link(rel='stylesheet' type='text/css' href='../../css/aulas.css')
+block header
+    header
+        include ../includes/headeraulas
+        h1 Python3
+    include ../includes/navaulas
+block conteudo
+    main
+        .linha
+            section
+                article.card
+                    .tabaulas
+                        ul
+                            li
+                                a(href='aula1.html')
+                                    | Aula 1
+                                    span &gt;
+                            li
+                                a(href='aula2.html')
+                                    | Aula 2
+                                    span &gt;
+block script
+    script(src='../../javascript/menuaulas.js')

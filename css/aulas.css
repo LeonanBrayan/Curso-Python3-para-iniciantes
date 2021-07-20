@@ -9,18 +9,18 @@ body {
     margin: 0px;
 }
 .linha {
-  padding: 0 20px;
+  padding: 0 4px;
   display: table;
   width: 100%;
 }
 section {
   float: left;
-  width: 75%;
+  width: 100%;
 }
 .card {
   background-color: white;
-  padding: 20px;
-  margin-top: 20px;
+  padding: 8px;
+  margin-top: 4px;
 }
 aside {
   float: left;
@@ -131,6 +131,27 @@ div#acesso li {
 div#aulas a {
   padding: 20px;
   color: white;
+}
+/*tabela de cursos*/
+.tabaulas {
+  width: 100%;
+  position: relative;
+}
+section a {
+  text-decoration: none;
+  color: black;
+}
+section ul {
+  list-style-type: none;
+  padding: 0px;
+}
+section li {
+  border-bottom: 1px solid rgb(219, 210, 210);
+  padding: 8px 12px;
+}
+section li span {
+  position: absolute;
+  right: 20px;
 }
 iframe {
   text-align: center;
