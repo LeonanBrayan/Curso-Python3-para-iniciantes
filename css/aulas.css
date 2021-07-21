@@ -12,6 +12,7 @@ body {
   padding: 0 4px;
   display: table;
   width: 100%;
+  min-height: 400px;
 }
 section {
   float: left;
@@ -21,6 +22,7 @@ section {
   background-color: white;
   padding: 8px;
   margin-top: 4px;
+  min-height: 400px;
 }
 aside {
   float: left;
@@ -43,7 +45,7 @@ nav#open ul {
     background-color: rgb(19, 76, 140);
     overflow: hidden;
     margin: 0;
-    padding: 0;
+    padding: 8px;
 }
 nav#open li {
     float: left;
@@ -249,5 +251,8 @@ footer dl, footer p {
   }
   header p {
     margin-left: 8;
+  }
+  iframe {
+    height: 280px;
   }
 }

@@ -20,15 +20,12 @@ header #open {
 header h1, header #open {
   display: table-cell;
 }
-header h2 a {
+header h1 a, header h2 a {
 color: rgba(11, 6, 48, 0.87);
 }
 h1#principal {
 color: rgb(12, 158, 238);
 text-align: center;
-}
-header h1 {
-  color: rgba(11, 6, 48, 0.87);
 }
 .linha {
   padding: 0 4px;
