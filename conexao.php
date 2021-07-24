@@ -1,7 +1,7 @@
 <?php
     $servidor = "localhost";
-    $usuario = "postgres";
-    $dbname = "alunos"
+    $usuario = "leonan";
+    $dbname = "python"
     //criar a conexao
     $conn = mysql_connect ($servidor, $usuario, $dbname)
 ?>
