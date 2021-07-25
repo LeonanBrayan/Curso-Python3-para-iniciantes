@@ -1,7 +1,7 @@
 <?php
     $servidor = "localhost";
     $usuario = "leonan";
-    $dbname = "python"
+    $dbname = "python";
     //criar a conexao
-    $conn = mysql_connect ($servidor, $usuario, $dbname)
+    $conn = mysql_connect ($servidor, $usuario, $dbname);
 ?>
