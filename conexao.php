@@ -1,6 +1,6 @@
 <?php
     $servidor = "localhost";
-    $usuario = "leonan";
+    $usuario = "root";
     $dbname = "python";
     //criar a conexao
     $conn = mysql_connect ($servidor, $usuario, $dbname);
