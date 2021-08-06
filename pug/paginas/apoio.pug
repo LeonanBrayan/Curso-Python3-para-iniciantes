@@ -5,8 +5,31 @@ block css
     link(rel='stylesheet' type='text/css' href='../../css/style.css')
 block header
     header
-        h1 Página de apoio
+        h1 SmartCursos
         include ../includes/header
         include ../includes/nav
 block conteudo
     main
+        div.linha
+            section
+                article.card
+                    .tabapoio
+                        h2 É gratificante saber que nossos cursos estão lhe ajudando de alguma forma.
+                        h3
+                            | Nessa página você pode colaborar com um valor simbólico, para demonstrar gratidão às nossas videoaulas,
+                            br
+                            | e incentvar o progresso desse projeto chamado Smart Cursos.
+                        p
+                            | Logo a seguir, verá as formas de como pode contribuir, e claramente, agradecemos desde já pela sua generosidade.
+                        .apoio
+                            h3 R$20,00
+                            p Para contribuir com o valor de R$20,00, clique no botão abaixo
+                        .apoio
+                            h3 R$30,00
+                            p Para contribuir com o valor de R$30,00, clique no botão abaixo
+                        .apoio
+                            h3 R$40,00
+                            p Para contribuir com o valor de R$40,00, clique no botão abaixo
+
+block script
+    script(src='../../javascript/menuaulas.js')

@@ -12,6 +12,7 @@ header {
   text-align: center;
   background-color: white;
   padding: 8px;
+  font-weight: bold;
 }
 header #open {
   display: table;
