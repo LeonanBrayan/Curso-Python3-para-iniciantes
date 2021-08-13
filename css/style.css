@@ -34,6 +34,7 @@ header h1 {
   padding: 0 4px;
   display: table;
   width: 100%;
+  min-height: 600px;
 }
 main {
   margin: 0 auto;
@@ -46,6 +47,7 @@ section {
   background-color: white;
   padding: 8px;
   margin-top: 4px;
+  min-height: 600px;
 }
 aside {
   float: left;
@@ -154,13 +156,23 @@ section p#assinatura {
   padding: 8px;
   text-align: center;
 }
+.tabapoio h2, h3 {
+  color: rgb(28, 82, 192);
+}
 .apoio {
-  width: 400px;
+  width: 288px;
   float: left;
-  background-color: rgba(122, 180, 242, 0.846);
+  background-color: rgba(210, 230, 248, 0.846);
   padding: 8px;
   margin-left: 26px;
-  font-weight: bold;
+  margin-top: 20px;
+  font-weight: bolder;
+  color: rgb(28, 82, 192);
+  box-shadow: 2px 2px 8px 2px rgba(2, 2, 98, 0.58);
+}
+.apoiar {
+  font-size: 28px;
+  color: rgb(26, 78, 180);
 }
 iframe {
   text-align: center;
@@ -178,14 +190,15 @@ footer dt {
 footer dd {
   margin-left: 0;
 }
-footer p {
+footer a {
   text-align: right;
   font-weight: bold;
   font-size: 20px;
   display: table;
   width: 100%;
+  color: white;
 }
-footer dl, footer p {
+footer dl, footer a {
   display: table-cell;
   vertical-align: middle
 }
@@ -208,6 +221,14 @@ footer dl, footer p {
     font-size: 190px;
     position: absolute;
     top: 100px;
+  }
+  /*tabela de apoio tela tablet*/
+  .apoio {
+    width: 100%;
+    margin-left: 0;
+  }
+  .tabapoio {
+    height: 1200px;
   }
 }
 @media screen and (min-width: 601px) {
@@ -258,5 +279,13 @@ footer dl, footer p {
     display: table-cell;
     vertical-align: middle;
     padding: 8px;
+  }
+  .tabapoio {
+    height: 100%;
+    overflow: hidden;
+  }
+  .apoio {
+    width: 100%;
+    margin-left: 0px;
   }
 }

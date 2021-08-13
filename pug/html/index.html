@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <title>SmartCursos</title>
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
-    <link rel="stylesheet" type="text/css" href="../../css/contato.css">
   </head>
   <body>
     <header>
-      <h1>Contato</h1>
+      <h1>SmartCursos</h1>
       <h2><a class="btn-abrir" href="#" onclick="abrirMenu()">&#x2630;</a></h2>
       <nav id="open">
         <p id="close"><a href="#" onclick="fecharMenu()">&times;</a></p>
@@ -24,17 +23,18 @@
     </header>
     <main>
       <div class="linha">
-        <form class="card" action="https://api.staticforms.xyz/submit" method="POST">
-          <input type="hidden" name="accessKey" value="c7b47451-2576-4c44-918b-dc4582f8b36a">
-          <input type="hidden" name="redirectTo" value="https://leonanbrayan.github.io/SmartCursos/pug/html/contato.html">
-          <label for="inputnome">Nome</label>
-          <input id="inputnome" type="text" name="name" required="" maxlength="20" minlength="2"><span></span>
-          <label for="inputemail">e-mail</label>
-          <input id="inputemail" type="text" name="email" required="" maxlength="40"><span></span>
-          <label for="textAreaMensagem">Mensagm</label>
-          <textarea id="textAreaMensagem" name="message" required="" maxlength="200"></textarea><span></span>
-          <button>Enviar mensagem</button>
-        </form>
+        <section>
+          <article class="card">
+            <h2>Cursos de linguagens de programação em videoaulas</h2><a href="cursos.html"><img src="../../imagens/linguagens.png.jpg" alt="Cursos linguagens de programação" width="100%"></a>
+            <p>Curos para iniciantes em linguagens de programação.</p>
+          </article>
+        </section>
+        <aside>
+          <article class="card">
+            <h3>Cursos disponiveis</h3><a href="cursos.html"><img src="../../imagens/pythonlateral.png.jpg" alt="Cursos disponiveis" width="100%"></a>
+            <p>Confira nossos cursos disponiveis até o momento</p>
+          </article>
+        </aside>
       </div>
     </main>
     <footer>
