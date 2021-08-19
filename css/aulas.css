@@ -111,6 +111,7 @@ iframe {
   text-align: center;
 }
 footer {
+  position: relative;
   font-size: 12px;
   padding: 20px;
   background-color: rgb(19, 76, 140);
@@ -123,14 +124,16 @@ footer dt {
 footer dd {
   margin-left: 0;
 }
-footer p {
-  text-align: right;
+footer a {
+  position: absolute;
+  right: 20px;
+  bottom: 28px;
   font-weight: bold;
   font-size: 20px;
   display: table;
-  width: 100%;
+  color: white;
 }
-footer dl, footer p {
+footer dl, footer a {
   display: table-cell;
   vertical-align: middle
 }

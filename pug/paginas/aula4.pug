@@ -1,0 +1,25 @@
+extends layout.pug
+block titulo
+    title Aula 4
+block css
+    link(rel='stylesheet' type='text/css' href='../../css/aulas.css')
+block header
+    header
+        include ../includes/headeraulas
+        h1 Aula_04
+    include ../includes/navaulas
+block conteudo
+    main
+         div.linha
+            section
+                article.card
+                    h2 Operadores Aritméticos
+                    iframe(width='100%' height='400' src='https://www.youtube.com/embed/CbXCARprhRk' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+                    p Nessa aula aprendemos um pouco sobre operadores aritméticos.
+                    p
+                    | Aprendemos quais são os símbolos usados para os operadores aritméticos, a função de cada um, e, vimos também sobre a ordem de prescendência.
+                    p
+                    | Sugiro que pratique o que foi proposto no vídeo, e, quando estiver pronto, prossiga para a aula 5.
+
+block script
+    script(src='../../javascript/menuaulas.js')

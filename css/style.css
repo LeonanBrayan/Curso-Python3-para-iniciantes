@@ -288,4 +288,12 @@ footer dl, footer a {
     width: 100%;
     margin-left: 0px;
   }
+  .tabcursos li {
+    float: none;
+  }
+  .cursos {
+    width: 100%;
+    margin-top: 8px;
+    height: auto;
+  }
 }

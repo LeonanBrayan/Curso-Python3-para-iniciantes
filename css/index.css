@@ -8,6 +8,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
 }
+ul {
+  list-style: none;
+}
 header {
   text-align: center;
   background-color: white;
@@ -211,9 +214,20 @@ main {
   padding: 20px;
   float: left;
 }
+/*area de comentarios*/
+.comentarios {
+  width: 100%;
+  height: 280px;
+  padding: 8px;
+  background-color: #aff7f7c9;
+  margin-top: 8px;
+  text-align: center;
+  font-size: 28px;
+  margin-left: 0;
+}
 section p#assinatura {
   background-color: rgba(232, 238, 240, 0.828);
-  color: rgba(20, 140, 180, 0.848);
+  color: rgba(24, 165, 212, 0.774);
 }
 iframe {
   text-align: center;
