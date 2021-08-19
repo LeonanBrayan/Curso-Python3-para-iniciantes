@@ -214,16 +214,57 @@ main {
   padding: 20px;
   float: left;
 }
+.cursopython {
+  margin-top: -20px;
+}
 /*area de comentarios*/
-.comentarios {
+.slides {
+  padding-left: 2px;
+  font-size: 20px;
+  color: #075888;
+  text-align: center;
+  background-color: white;
   width: 100%;
-  height: 280px;
+  height: 370px;
+  position: relative;
+  overflow: hidden;
+}
+.comentarios {
+  position: absolute;
+  left: 10%;
+  opacity: 0;
+  animation-name: animacao;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  width: 80%;
+  height: 260px;
   padding: 8px;
-  background-color: #aff7f7c9;
+  background-color: #b6f5f5fb;
   margin-top: 8px;
   text-align: center;
   font-size: 28px;
   margin-left: 0;
+}
+@keyframes animacao {
+  30%{
+    opacity: 1;
+    transform: scale(1.1,1.1);
+  }
+  50%{
+    opacity: 0;
+  }
+}
+.comentarios:nth-child(1){
+  animation-delay: 0s;
+}
+.comentarios:nth-child(2){
+  animation-delay: 5s;
+}
+.comentarios:nth-child(3){
+  animation-delay: 10s;
+}
+.comentarios:nth-child(4){
+  animation-delay: 15s;
 }
 section p#assinatura {
   background-color: rgba(232, 238, 240, 0.828);
@@ -278,6 +319,10 @@ footer dl, footer p {
     font-size: 190px;
     position: absolute;
     top: 100px;
+  }
+  .comentarios {
+    font-size: 20px;
+    height: auto;
   }
 }
 @media screen and (min-width: 601px) {

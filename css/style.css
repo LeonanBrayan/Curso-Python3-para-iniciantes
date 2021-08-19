@@ -148,6 +148,9 @@ section p#assinatura {
   padding: 20px;
   float: left;
 }
+.cursopython {
+  margin-top: -20px;
+}
 /*configurando tabela da pagina de apoio*/
 .tabapoio {
   width: 100%;
